@@ -1,0 +1,33 @@
+<head>
+<title>{{ siteName }}</title>
+</head>
+<body>
+
+
+
+
+
+{% block content %}
+
+{% if entry is not defined %}
+    {% set entry = craft.entries.uri('homepage').first() %}
+{% endif %}
+
+{% if entry is defined %}
+
+{% set title = entry.homepageTitle %}
+
+	<h1> {{ title }}</h1>
+	<hr>
+<h2>List of entries in pub channel</h2>
+{% for entry in craft.entries.section('pubs') %}
+    <article>
+        <h1><a href="{{ entry.url }}">{{ entry.title }}</a></h1>
+        <span>{{ entry.body }}</span>
+    </article>
+{% endfor %}
+
+
+</body>
+{% endif %}
+{% endblock %}
