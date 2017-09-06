@@ -3,3 +3,8 @@
 /vendor
 .DS_Store
 .env.sh
+config/license.key
+
+.sass-cache
+node_modules
+npm-debug.log
