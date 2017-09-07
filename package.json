@@ -1,0 +1,31 @@
+{
+  "name": "bestcraftbeerpub",
+  "version": "1.0.0",
+  "description": "<p align=\"center\"><a href=\"https://craftcms.com/\" target=\"_blank\"><img width=\"312\" height=\"90\" src=\"https://craftcms.com/craftcms.svg\" alt=\"Craft CMS\"></a></p>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/inbn/goodcraftbeer.pub.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/inbn/goodcraftbeer.pub/issues"
+  },
+  "homepage": "https://github.com/inbn/goodcraftbeer.pub#readme",
+  "devDependencies": {
+    "autoprefixer": "^7.1.4",
+    "gulp": "^3.9.1",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-notify": "^3.0.0",
+    "gulp-postcss": "^7.0.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.1",
+    "reflex-grid": "^1.5.0",
+    "sanitize.css": "^5.0.0",
+    "sass-module-importer": "^1.4.0"
+  }
+}

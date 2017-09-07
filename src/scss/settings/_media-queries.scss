@@ -1,0 +1,25 @@
+/*====================================*\
+
+    SETTINGS - MEDIA QUERIES
+
+\*====================================*/
+
+/*------------------------------------*\
+    Breakpoints
+\*------------------------------------*/
+
+$bp-x-small: 480px;
+$bp-small: 768px;
+$bp-medium: 992px;
+$bp-large: 1100px;
+$bp-x-large: 1200px;
+
+/*------------------------------------*\
+    Media Query Expressions
+\*------------------------------------*/
+
+$mq-x-small: 'min-width: ' + $bp-x-small;
+$mq-small: 'min-width: ' + $bp-small;
+$mq-medium: 'min-width: ' + $bp-medium;
+$mq-large: 'min-width: ' + $bp-large;
+$mq-x-large: 'min-width: ' + $bp-x-large;

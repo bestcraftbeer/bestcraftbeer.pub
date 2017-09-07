@@ -1,0 +1,28 @@
+/*====================================*\
+
+    SETTINGS - LAYOUT
+
+\*====================================*/
+
+/*------------------------------------*\
+    Site-wide constants
+\*------------------------------------*/
+
+$site-max-width: 1200px;
+$site-grid-spacing: 16px;
+
+/*------------------------------------*\
+    Reflex
+\*------------------------------------*/
+
+$reflex-max-width: $site-max-width;
+
+$reflex-grid-spacing: $site-grid-spacing;
+
+$reflex-columns: 24;
+
+$reflex-xs: $bp-x-small;
+$reflex-sm: $bp-small;
+$reflex-md: $bp-medium;
+$reflex-lg: $bp-large;
+$reflex-xlg: $bp-x-large;
