@@ -19,7 +19,7 @@
 {% set googlePlaceId = entry.googlePlaceId %}
 {% set body = entry.body %}
 {% set beers = entry.beer %}
-{% set mapsApiKey = 'AIzaSyDNmUyYDB1BitLY4N6XgahIngoY3RTN-ck' %}
+{% set mapsApiKey = maps.googleMapsApiKey %}
 <script async defer type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key={{ mapsApiKey }}&libraries=places"></script>
 
 
@@ -46,7 +46,7 @@
 <div id="service-helper">asd</div>
 
 <script type="text/javascript">
-    
+
 
    function getRelevantGoogleReviews(){
      var service = new google.maps.places.PlacesService($('#service-helper').get(0)); // note that it removes the content inside div with tag '#service-helper'
@@ -62,7 +62,7 @@
                 resultcontent += '<div class="reviews__review-er">' + place.reviews[i].author_name + '</div>';
                 var reviewDate = new Date(place.reviews[i].time * 1000);
                 var reviewDateMM = reviewDate.getMonth() + 1;
-                var reviewDateFormatted = reviewDate.getDate() + '/' + reviewDateMM + '/' + reviewDate.getFullYear(); 
+                var reviewDateFormatted = reviewDate.getDate() + '/' + reviewDateMM + '/' + reviewDate.getFullYear();
                 resultcontent += '<div class="reviews__review-date">' + reviewDateFormatted + '</div>';
                 resultcontent += '<div class="reviews__review-rating reviews__review-rating--' + place.reviews[i].rating +'"></div>';
                 if (!!place.reviews[i].text){
